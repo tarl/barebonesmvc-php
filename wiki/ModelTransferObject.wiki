@@ -8,7 +8,7 @@ DTO's are often referred to as Value Objects (VO) but this gives the mistaken im
 
 BareBones' MTO interface provides both a setModel and a setModelValue method, for setting the entire model at once, and setting the model one value at a time, respectively.  The default BareBonesMTO implementation intends an associative array rather than object attributes for its ephemeral data storage needs.
 
-ModelTransferObject were largely inspired by Spring WebMVC's "ModelAndView" abstraction, but with a couple of important distinctions:
+The ModelTransferObject concept was largely inspired by Spring WebMVC's "ModelAndView" abstraction, but with a couple of important distinctions:
 
   # ModelTransferObject is a much more meaningful and precise name than ModelAndView
   # A ModelAndView's transfer strategy is not meant to be modified, unlike BareBones/MTO's  applyModelToView method; a default implementation is provided but this can be overriden 

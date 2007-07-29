@@ -10,5 +10,5 @@ BareBones' MTO interface provides for both a setModel and setModelValue methods,
 
 ModelTransferObjects were largely inspired by Spring WebMVC's "ModelAndView" abstraction, but with a couple of important distinctions:
 
-  #ModelTransferObject is a much more meaningful and precise name than ModelAndView
-  #A ModelAndView's transfer strategy is not meant to be modified, unlike BareBones/MTO's  applyModelToView method; a default implementation is provided but this can be overriden 
+  # ModelTransferObject is a much more meaningful and precise name than ModelAndView
+  # A ModelAndView's transfer strategy is not meant to be modified, unlike BareBones/MTO's  applyModelToView method; a default implementation is provided but this can be overriden 

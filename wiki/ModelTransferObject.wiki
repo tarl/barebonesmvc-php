@@ -6,7 +6,7 @@ Model Transfer Objects (MTO) are nothing but Data Transfer Objects (DTO) in an M
 
 DTO's are often referred to as Value Objects (VO) but this gives the mistaken impression that DTO's need only be comprised of object attributes, without behavior.  This is absolutely erroneous, as the one behavior that DTO's should indeed implement can be discerned from its name: a (data) transfer strategy.
 
-BareBones' MTO interface provides both a setModel and setModelValue methods, for setting the entire model at once and setting the model one value at a time, respectively.  The default BareBonesMTO implementation intends an associative array rather than object attributes for its ephemeral data storage needs.
+BareBones' MTO interface provides both a setModel and a setModelValue method, for setting the entire model at once, and setting the model one value at a time, respectively.  The default BareBonesMTO implementation intends an associative array rather than object attributes for its ephemeral data storage needs.
 
 ModelTransferObject were largely inspired by Spring WebMVC's "ModelAndView" abstraction, but with a couple of important distinctions:
 

@@ -125,17 +125,17 @@
       unset($GLOBALS);
       $GLOBALS['_SESSION'] = $session;      
     }
-    
-    function applyModelToView() {
-      $this->preserveSession();
-      $model = $this->model;
-      include($this->view);
-    }
   }
   
   class BareBonesMto extends AbstractMTO {    
     function __construct($view) {
       $this->setView($view);
     }
+    
+    function applyModelToView() {
+      $this->preserveSession();
+      $model = $this->model;
+      include($this->view);
+    }    
   }
 ?>

@@ -12,6 +12,6 @@ At the same time this struck me though I realized that what is needed is an addi
 
 Objects such as the envisioned "RequestTransferObject" already exist in other frameworks: Struts' "Form" object springs to mind.  The abstractions I've identified are not new: only their names are.
 
-My new goal moving away from barebonesmvc is to create an entire family of lightweight MVC frameworks for multiple web platforms (not unlike the xUnit family of testing frameworks).  Indeed, earlier in the summer before releasing barebonesmvc on code.google.com, I'd ported the concepts to mod_python.
+My new goal moving away beyond barebonesmvc is to create an entire family of lightweight MVC frameworks for multiple web platforms (not unlike the xUnit family of testing frameworks).  Indeed, earlier in the summer before releasing barebonesmvc on code.google.com, I'd ported the concepts to mod_python; furthermore I have experience with ASP and Perl, and an interest in Lua and Ruby.
 
-Stay tuned as I strive to strike the perfect balance between oversimplicity, and frameworkitis.
+Stay tuned as I strive to strike the perfect balance between over-simplicity, and framework-itis.

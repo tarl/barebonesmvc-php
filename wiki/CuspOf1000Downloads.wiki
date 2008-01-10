@@ -1,7 +1,5 @@
 #summary Striking a balance between simplicity and frameworkitis.
 
-===On the cusp of one thousand downloads.===
-
 1000 downloads in less than six months to me demonstrates that developers are looking for simpler ways of doing things.  However to paraphrase Einstein: "everything should be made as simple as possible, but no simpler."  And I think I went _too_ far with barebonesmvc.
 
 Here's how.  In the default "BareBonesMto", I clobber everything in the $GLOBALS array, except for the session, via the call to $this->preserveSession() within applyModelToView().  This was short sighted: it prevents a developer from implementing "sticky forms" that echo a previously entered form value, for instance if other form fields don't validate.

@@ -1,10 +1,14 @@
 #summary Striking a balance between simplicity and frameworkitis.
 
-1000 downloads in less than six months to me demonstrates that developers are looking for simpler ways of doing things.  However to paraphrase Einstein: "everything should be made as simple as possible, but no simpler."  And I think I went _too_ far with barebonesmvc.
+1000 downloads in less than six months to me demonstrates that developers are looking for simpler ways of doing things.  However to paraphrase Einstein: 
+
+ "Everything should be made as simple as possible, but no simpler."  
+
+And I think I went _too_ far with barebonesmvc.
 
 Here's how.  In the default "BareBonesMto", I clobber everything in the $GLOBALS array, except for the session, via the call to $this->preserveSession() within applyModelToView().  This was short sighted: it prevents a developer from implementing "sticky forms" that echo a previously entered form value, for instance if other form fields don't validate.
 
-This shortcoming came to mind as I actually successfully used barebonesmvc to convert 70+ HTML pages to PHP in about a month.  If I continue in that project long enough to implement some sticky forms that have been requested, I will either either delete the offending line -- the one calling $this->preserveSession() -- or extend BareBonesMto and re-implement applyModelToView().
+This shortcoming came to mind as I actually successfully [http://pondpath.com/george_jempty_resume.pdf used barebonesmvc] to convert 70+ HTML pages to PHP in about a month.  If I continue in that project long enough to implement some sticky forms that have been requested, I will either either delete the offending line -- the one calling $this->preserveSession() -- or extend BareBonesMto and re-implement applyModelToView().
 
 At the same time this struck me though I realized that what is needed is an additional abstraction that is the counter balance to the "ModelTransferObject": a "RequestTransferObject".  Once I populate this with form data, _then_ I can call the preserveSession() method.
 

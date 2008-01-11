@@ -10,7 +10,7 @@ Here's how.  In the default "BareBonesMto", I clobber everything in the $GLOBALS
 
 This shortcoming came to mind as I actually successfully [http://pondpath.com/george_jempty_resume.pdf used barebonesmvc] to convert 70+ HTML pages to PHP in about a month.  If I continue in that project long enough to implement some sticky forms that have been requested, I will either either delete the offending line -- the one calling $this->preserveSession() -- or extend BareBonesMto and re-implement applyModelToView().
 
-At the same time this struck me though I realized that what is needed is an additional abstraction that is the counter balance to the "ModelTransferObject": a "RequestTransferObject".  Once I populate this with form data, _then_ I can call the preserveSession() method.
+At the same time this struck me though, I realized that what is needed is an additional abstraction that is the counter balance to the "ModelTransferObject": a "RequestTransferObject".  Once I populate this with form data, _then_ I can call the preserveSession() method.
 
 Objects such as the envisioned "RequestTransferObject" already exist in other frameworks: Struts' "Form" object springs to mind.  The abstractions I've identified are not new: only their names are.
 
